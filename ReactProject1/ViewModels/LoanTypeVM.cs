@@ -54,7 +54,6 @@ namespace ReactProject1.ViewModels
             var LoanSubTypeList = DBOpsLOS.GetLoanSubTypes(loanTypeId);
             foreach (var item in LoanSubTypeList)
             {
-
                     this.LoanSubTypeList.Add(new SelectListItem { Text = item.Description, Value = item.Value.ToString() });
             }
             return this.LoanSubTypeList;

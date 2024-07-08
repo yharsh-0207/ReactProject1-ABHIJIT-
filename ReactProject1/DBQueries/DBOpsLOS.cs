@@ -29,6 +29,10 @@ namespace ReactProject1.DBQueries
 
         public static List<ApplicationMaster> GetLoanSubTypes(int loanTypeId)
         {
+            if(loanTypeId == 22489)
+            {
+                loanTypeId = 22486;
+            }
             List<ApplicationMaster> loanSubtypeList = new List<ApplicationMaster>();
             using (ReactProjectContext db = new ReactProjectContext())
             {
